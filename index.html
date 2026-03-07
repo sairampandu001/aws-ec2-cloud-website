@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Pandu Sairam | AWS Cloud Practice</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#03060a;
+color:white;
+overflow-x:hidden;
+}
+
+/* particles canvas */
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+z-index:0;
+}
+
+/* page content above particles */
+
+.page{
+position:relative;
+z-index:2;
+}
+
+/* header */
+
+header{
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+color:#00e6ff;
+}
+
+header p{
+font-size:18px;
+opacity:0.95;
+max-width:720px;
+margin:12px auto;
+line-height:1.6;
+text-align:center;
+letter-spacing:0.3px;
+color:#d9f9ff;
+}
+
+/* container */
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+}
+
+/* section cards */
+
+.section{
+background:#0b0f16;
+padding:30px;
+margin-top:25px;
+border-radius:12px;
+border:1px solid rgba(0,230,255,0.25);
+box-shadow:0 0 25px rgba(0,0,0,0.8);
+transition:all 0.4s ease;
+}
+
+.section.active{
+transform:scale(1.02);
+box-shadow:0 0 35px rgba(0,230,255,0.35);
+}
+
+.section h2{
+margin-top:0;
+color:#00e6ff;
+}
+
+/* badges */
+
+.badges span{
+display:inline-block;
+background:#00e6ff;
+color:#000;
+padding:8px 12px;
+margin:6px;
+border-radius:20px;
+font-weight:bold;
+font-size:14px;
+}
+
+/* architecture flow */
+
+.arch{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+margin-top:20px;
+gap:10px;
+font-weight:bold;
+}
+
+.node{
+background:#111;
+border:1px solid #00e6ff;
+padding:12px 18px;
+border-radius:8px;
+}
+
+.arrow{
+font-size:24px;
+color:#00e6ff;
+animation:flow 1.5s infinite;
+}
+
+@keyframes flow{
+0%{opacity:0.3; transform:translateX(-5px);}
+50%{opacity:1; transform:translateX(5px);}
+100%{opacity:0.3; transform:translateX(-5px);}
+}
+
+/* footer */
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:40px;
+background:#000;
+}
+
+/* mobile */
+
+@media (max-width:768px){
+
+header h1{
+font-size:30px;
+}
+
+header p{
+font-size:16px;
+}
+
+.container{
+padding:15px;
+}
+
+.arch{
+flex-direction:column;
+}
+
+/* hide side arrow */
+
+.arrow{
+font-size:0;
+animation:flowMobile 1.5s infinite;
+}
+
+/* show down arrow */
+
+.arrow::before{
+content:"⬇";
+font-size:26px;
+color:#00e6ff;
+display:block;
+}
+
+/* vertical animation */
+
+@keyframes flowMobile{
+0%{opacity:0.3; transform:translateY(-5px);}
+50%{opacity:1; transform:translateY(5px);}
+100%{opacity:0.3; transform:translateY(-5px);}
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="particles"></canvas>
+
+<div class="page">
+
+<header>
+
+<h1>🚀 Welcome to My AWS EC2 Cloud Server</h1>
+
+<p>Thank you for visiting my website. I truly appreciate your time exploring my Cloud & DevOps learning project.</p>
+
+<p>If you are seeing this page, it means you have successfully reached my server hosted on AWS EC2.</p>
+
+</header>
+
+
+<div class="container">
+
+<div class="section">
+
+<h2>🧑‍💻 About Me</h2>
+
+<img src="profile.png" style="width:250px;border-radius:50%;display:block;margin:20px auto;border:4px solid #00e6ff;">
+
+<p>
+My name is <b>Pandu Sairam</b>.  
+I am currently learning <b>Cloud Computing and DevOps</b> step by step by building real hands-on projects using AWS and Linux servers.
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>☁️ End-to-End AWS EC2 Web Server Deployment</h2>
+
+<p>
+As part of my Cloud/DevOps learning journey, I deployed a complete web server environment on AWS.
+</p>
+
+<p>
+I created an AWS account, launched an <b>EC2 instance in the Asia Pacific (Hyderabad) region</b>, and connected securely using <b>SSH with a .pem key</b>.
+</p>
+
+<p>
+Inside the server, I practiced Linux commands such as <b>cd, ls, pwd</b> and explored important directories like:
+</p>
+
+<p>
+<b>/etc</b> – system configuration  
+<b>/var</b> – system data and logs  
+<b>/var/www/html</b> – website root directory
+</p>
+
+<p>
+I installed and configured the <b>Apache web server (httpd)</b> and deployed a custom website by editing the <b>index.html</b> file.
+</p>
+
+<div class="badges">
+<span>ssh</span>
+<span>.pem key</span>
+<span>cd</span>
+<span>ls</span>
+<span>pwd</span>
+<span>httpd</span>
+<span>dnf install httpd</span>
+<span>systemctl start httpd</span>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>🔐 Security & Networking Configuration</h2>
+
+<p>
+I configured AWS <b>Security Groups</b> to allow the required ports:
+</p>
+
+<div class="badges">
+<span>SSH - Port 22</span>
+<span>HTTP - Port 80</span>
+<span>HTTPS - Port 443</span>
+</div>
+
+<p>
+This allows secure remote access and web traffic to reach the server safely.
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>🌐 Domain & SSL Configuration</h2>
+
+<p>
+I connected my custom domain to the EC2 server using DNS and configured secure web access.
+</p>
+
+<p>
+Using <b>Let’s Encrypt Certbot</b>, I generated an <b>SSL certificate</b> and configured Apache to enable <b>HTTPS encryption</b>.
+</p>
+
+<p>
+All HTTP traffic is redirected to HTTPS to ensure secure communication between users and the server.
+</p>
+
+<div class="badges">
+<span>DNS</span>
+<span>A Record</span>
+<span>Elastic IP</span>
+<span>Certbot</span>
+<span>Let's Encrypt</span>
+<span>HTTPS</span>
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>☁ AWS Architecture Flow</h2>
+
+<div class="arch">
+
+<div class="node">🌍 Browser</div>
+<div class="arrow">➡</div>
+<div class="node">🌐 Internet</div>
+<div class="arrow">➡</div>
+<div class="node">🔗 DNS</div>
+<div class="arrow">➡</div>
+<div class="node">☁ AWS EC2</div>
+<div class="arrow">➡</div>
+<div class="node">🖥 Apache</div>
+<div class="arrow">➡</div>
+<div class="node">📄 Website</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<h2>⚙️ Additional Learning</h2>
+
+<p>
+I also learned the differences between Linux package managers such as:
+</p>
+
+<div class="badges">
+<span>apt (Ubuntu)</span>
+<span>dnf (Amazon Linux)</span>
+</div>
+
+<p>
+and practiced updating and maintaining server packages.
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>🎯 My Goal</h2>
+
+<p>
+This project helped me understand the real-world fundamentals of:
+</p>
+
+<div class="badges">
+<span>Linux Server Management</span>
+<span>AWS EC2</span>
+<span>Networking</span>
+<span>Security Groups</span>
+<span>DNS</span>
+<span>SSL / HTTPS</span>
+<span>Web Hosting</span>
+</div>
+
+<p>
+I am continuously improving my skills to become a <b>Cloud / DevOps Engineer</b>.
+</p>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 Pandu Sairam | AWS Cloud Learning Project ☁️</p>
+
+</footer>
+
+</div>
+
+
+<script>
+
+/* BLUE PARTICLES */
+
+const canvas=document.getElementById("particles");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+let particles=[];
+
+for(let i=0;i<80;i++){
+particles.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+vx:(Math.random()-0.5)*0.25,
+vy:(Math.random()-0.5)*0.25
+});
+}
+
+function animate(){
+
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+particles.forEach(p=>{
+
+p.x+=p.vx;
+p.y+=p.vy;
+
+if(p.x<0||p.x>canvas.width)p.vx*=-1;
+if(p.y<0||p.y>canvas.height)p.vy*=-1;
+
+ctx.beginPath();
+ctx.arc(p.x,p.y,2,0,Math.PI*2);
+ctx.fillStyle="rgba(0,180,255,0.7)";
+ctx.fill();
+
+});
+
+requestAnimationFrame(animate);
+}
+
+animate();
+
+/* highlight section */
+
+const sections=document.querySelectorAll(".section");
+
+window.addEventListener("scroll",()=>{
+
+let middle=window.innerHeight/2;
+
+sections.forEach(sec=>{
+
+let rect=sec.getBoundingClientRect();
+
+if(rect.top < middle && rect.bottom > middle){
+sec.classList.add("active");
+}else{
+sec.classList.remove("active");
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
