@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pandu Sairam | AWS EC2 Cloud Deployment</title>
+<title>Pandu Sairam | AWS EC2 Cloud Web Server Deployment</title>
 
 <style>
 
@@ -15,7 +15,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* particles */
+/* particle canvas */
 
 canvas{
 position:fixed;
@@ -41,6 +41,7 @@ padding:70px 20px;
 header h1{
 font-size:42px;
 color:#00e6ff;
+margin-bottom:10px;
 }
 
 header p{
@@ -58,7 +59,7 @@ margin:auto;
 padding:20px;
 }
 
-/* section */
+/* sections */
 
 .section{
 background:#0b0f16;
@@ -221,142 +222,270 @@ animation:flowMobile 1.5s infinite;
 
 <h1>🚀 AWS EC2 Cloud Web Server Deployment</h1>
 
-<p>This website demonstrates a complete cloud-based web hosting deployment using AWS infrastructure.</p>
+<p>This project demonstrates the deployment of a cloud-hosted website using Amazon Web Services infrastructure.</p>
 
 </header>
 
 <div class="container">
 
+<!-- 2 ABOUT ME -->
+
 <div class="section">
+
 <h2>🧑‍💻 About Me</h2>
+
 <div class="profile">
 <img src="profile.png">
 </div>
-<p>My name is <b>Pandu Sairam</b>. This project demonstrates hands-on experience deploying and managing a cloud-based web server using AWS and Linux.</p>
+
+<p>My name is <b>Pandu Sairam</b>. This project demonstrates my hands-on experience deploying and managing a cloud-hosted website using AWS and Linux servers.</p>
+
 </div>
 
+<!-- 3 LEARNING JOURNEY -->
+
 <div class="section">
+
 <h2>🎯 Learning Journey</h2>
+
 <p>This project represents my hands-on learning journey in cloud computing and DevOps practices.</p>
+
+<p>Through building this project I learned how cloud infrastructure works including server provisioning, networking configuration, DNS setup, web server configuration and HTTPS security.</p>
+
 </div>
 
+<!-- 4 PROJECT OVERVIEW -->
+
 <div class="section">
+
 <h2>🚀 Project Overview</h2>
+
 <ul>
-<li>Deploying AWS EC2 cloud server</li>
-<li>Installing Apache web server</li>
-<li>Hosting website files</li>
-<li>Connecting custom domain</li>
-<li>Configuring DNS</li>
-<li>Enabling HTTPS security</li>
-<li>Using Git & GitHub</li>
+<li>Deploying a cloud server on AWS EC2</li>
+<li>Installing and configuring Apache web server</li>
+<li>Deploying website files on a Linux server</li>
+<li>Connecting a custom domain</li>
+<li>Configuring DNS records</li>
+<li>Securing the website with HTTPS</li>
+<li>Managing code using Git and GitHub</li>
 </ul>
+
 </div>
 
+<!-- 5 INFRASTRUCTURE SUMMARY -->
+
 <div class="section">
+
 <h2>📊 Infrastructure Summary</h2>
-<p>Cloud Platform: AWS</p>
-<p>Compute: EC2 t3.micro</p>
-<p>OS: Amazon Linux 2023</p>
-<p>Web Server: Apache</p>
-<p>DNS: GoDaddy</p>
-<p>Security: HTTPS (Certbot)</p>
+
+<p>Cloud Platform: Amazon Web Services (AWS)</p>
+<p>Compute Service: EC2 t3.micro</p>
+<p>Operating System: Amazon Linux 2023</p>
+<p>Web Server: Apache HTTP Server</p>
+<p>DNS Provider: GoDaddy</p>
+<p>Security: HTTPS enabled with Certbot</p>
+
 </div>
 
+<!-- 6 DEVOPS SKILLS -->
+
 <div class="section">
+
 <h2>⚙ DevOps Skills</h2>
+
 <ul>
-<li>AWS EC2</li>
-<li>Linux Administration</li>
-<li>Apache Configuration</li>
-<li>DNS Management</li>
-<li>HTTPS Security</li>
-<li>Git Version Control</li>
+<li>Linux server administration</li>
+<li>AWS cloud infrastructure deployment</li>
+<li>Apache web server configuration</li>
+<li>DNS configuration</li>
+<li>HTTPS security setup</li>
+<li>Git version control</li>
 </ul>
+
 </div>
 
+<!-- 7 TECHNOLOGY STACK -->
+
 <div class="section">
+
+<h2>🛠 Technology Stack</h2>
+
+<p>AWS EC2 | Linux | Apache | DNS | Certbot | Git | GitHub</p>
+
+</div>
+
+<!-- 8 ARCHITECTURE FLOW -->
+
+<div class="section">
+
 <h2>☁ AWS Architecture Flow</h2>
 
 <div class="arch">
+
 <div class="node">Browser</div>
 <div class="arrow">➡</div>
+
 <div class="node">Internet</div>
 <div class="arrow">➡</div>
+
 <div class="node">DNS</div>
 <div class="arrow">➡</div>
+
 <div class="node">Elastic IP</div>
 <div class="arrow">➡</div>
-<div class="node">EC2</div>
+
+<div class="node">AWS EC2</div>
 <div class="arrow">➡</div>
+
 <div class="node">Apache</div>
 <div class="arrow">➡</div>
-<div class="node">Website</div>
+
+<div class="node">Website Files</div>
+
 </div>
 
 </div>
+
+<!-- 9 ARCHITECTURE EXPLANATION -->
 
 <div class="section">
+
+<h2>📘 Architecture Explanation</h2>
+
+<p>When a user accesses the domain buciiii.com, the DNS records resolve the domain to the EC2 Elastic IP address. The request reaches the EC2 server where the Apache web server processes the request and serves the website files located in /var/www/html.</p>
+
+</div>
+
+<!-- 10 IMPLEMENTATION TIMELINE -->
+
+<div class="section">
+
 <h2>🗂 Project Implementation Timeline</h2>
-<p>Step 1 – Launch EC2 server</p>
-<p>Step 2 – Configure SSH access</p>
-<p>Step 3 – Install Apache</p>
-<p>Step 4 – Deploy website files</p>
-<p>Step 5 – Configure DNS</p>
-<p>Step 6 – Enable HTTPS</p>
-<p>Step 7 – Manage code with Git</p>
+
+<p>1. Launch EC2 instance</p>
+<p>2. Configure SSH access</p>
+<p>3. Install Apache web server</p>
+<p>4. Deploy website files</p>
+<p>5. Configure DNS records</p>
+<p>6. Enable HTTPS security</p>
+<p>7. Manage project with Git</p>
+
 </div>
 
+<!-- 11 DEPLOYMENT IMPLEMENTATION -->
+
 <div class="section">
-<h2>📘 Deployment Implementation</h2>
-<p>sudo nano /var/www/html/index.html</p>
+
+<h2>📦 Deployment Implementation</h2>
+
 <p>sudo dnf install httpd</p>
 <p>sudo systemctl start httpd</p>
 <p>sudo systemctl enable httpd</p>
+
 </div>
 
+<!-- 12 TROUBLESHOOTING -->
+
 <div class="section">
+
+<h2>🛠 Problems Faced & Troubleshooting</h2>
+
+<p>During deployment the website was initially not accessible through the browser. Troubleshooting included checking EC2 instance status, verifying Apache service status, reviewing security group rules and checking DNS configuration.</p>
+
+<p>Network diagnostics using ping and tracert helped identify a routing issue which was later resolved.</p>
+
+</div>
+
+<!-- 13 SECURITY -->
+
+<div class="section">
+
 <h2>🔐 Security & Networking</h2>
+
 <p>Port 22 – SSH</p>
 <p>Port 80 – HTTP</p>
 <p>Port 443 – HTTPS</p>
+
 </div>
 
+<!-- 14 DNS -->
+
 <div class="section">
+
 <h2>🌐 Domain & DNS Configuration</h2>
+
 <p>buciiii.com → Elastic IP</p>
+
 <p>www.buciiii.com → buciiii.com</p>
+
 </div>
 
+<!-- 15 VERSION CONTROL -->
+
 <div class="section">
+
 <h2>💻 Version Control</h2>
+
 <p>Repository: https://github.com/sairampandu001/aws-ec2-cloud-website</p>
+
 </div>
 
+<!-- 16 LIVE -->
+
 <div class="section">
+
 <h2>🌍 Live Deployment</h2>
-<p>Website available at: https://buciiii.com</p>
+
+<p>https://buciiii.com</p>
+
 </div>
 
+<!-- 17 PRODUCTION -->
+
 <div class="section">
+
+<h2>🌐 Production Environment</h2>
+
+<p>The website is hosted on an EC2 instance running Amazon Linux with Apache web server and secured using HTTPS certificates.</p>
+
+</div>
+
+<!-- 18 FUTURE -->
+
+<div class="section">
+
 <h2>🚀 Future Improvements</h2>
-<ul>
-<li>Automated deployment pipelines</li>
-<li>Containerization using Docker</li>
-<li>Infrastructure automation</li>
-<li>Monitoring and logging</li>
-</ul>
+
+<p>In the future I plan to continue learning technologies such as containerization, CI/CD automation and monitoring tools to improve this project further.</p>
+
 </div>
 
+<!-- 19 OUTCOME -->
+
 <div class="section">
+
+<h2>📈 Project Outcome</h2>
+
+<p>This project demonstrates practical understanding of deploying a cloud-hosted website including server provisioning, networking configuration, DNS setup and HTTPS security.</p>
+
+</div>
+
+<!-- 20 FINAL RESULT -->
+
+<div class="section">
+
 <h2>🏁 Final Result</h2>
-<p>The project successfully demonstrates end-to-end cloud hosting using AWS EC2, Apache, DNS configuration, HTTPS security and Git version control.</p>
+
+<p>The website is successfully deployed and accessible through the domain https://buciiii.com using AWS cloud infrastructure.</p>
+
 </div>
 
 </div>
 
 <footer>
-<p>© 2026 Pandu Sairam | Cloud DevOps Project</p>
+
+<p>Cloud Infrastructure Project | Created by Pandu Sairam</p>
+
 </footer>
 
 </div>
@@ -385,6 +514,7 @@ function animate(){
 ctx.clearRect(0,0,canvas.width,canvas.height);
 
 particles.forEach(p=>{
+
 p.x+=p.vx;
 p.y+=p.vy;
 
