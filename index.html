@@ -2,24 +2,20 @@
 
 <html>
 <head>
-
-<title>Pandu Sairam | AWS EC2 Cloud Deployment</title>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pandu Sairam | AWS EC2 Cloud Deployment</title>
 
 <style>
 
-/* -------- GLOBAL -------- */
-
 body{
-font-family:Arial, Helvetica, sans-serif;
 margin:0;
+font-family:Arial, Helvetica, sans-serif;
 background:#03060a;
 color:white;
 overflow-x:hidden;
 }
 
-/* particles */
+/* particle canvas */
 
 canvas{
 position:fixed;
@@ -28,7 +24,7 @@ left:0;
 z-index:0;
 }
 
-/* page layer */
+/* main page layer */
 
 .page{
 position:relative;
@@ -45,7 +41,6 @@ padding:70px 20px;
 header h1{
 font-size:42px;
 color:#00e6ff;
-margin-bottom:15px;
 }
 
 header p{
@@ -63,40 +58,27 @@ margin:auto;
 padding:20px;
 }
 
-/* sections */
+/* section cards */
 
 .section{
 background:#0b0f16;
 padding:35px;
 margin-top:25px;
 border-radius:12px;
-border:1px solid rgba(0,230,255,0.2);
+border:1px solid rgba(0,230,255,0.25);
 box-shadow:0 0 20px rgba(0,0,0,0.9);
+transform:scale(0.97);
 transition:0.5s;
-transform:scale(0.98);
 }
 
 .section.active{
 transform:scale(1.02);
-box-shadow:0 0 35px rgba(0,230,255,0.35);
+box-shadow:0 0 40px rgba(0,230,255,0.4);
 }
 
 .section h2{
 color:#00e6ff;
 margin-top:0;
-}
-
-/* badges */
-
-.badges span{
-display:inline-block;
-background:#00e6ff;
-color:#000;
-padding:8px 12px;
-margin:6px;
-border-radius:20px;
-font-weight:bold;
-font-size:14px;
 }
 
 /* profile */
@@ -107,20 +89,20 @@ margin-top:20px;
 }
 
 .profile img{
-width:240px;
+width:220px;
 border-radius:50%;
 border:5px solid #00e6ff;
-box-shadow:0 0 30px rgba(0,230,255,0.6);
+box-shadow:0 0 35px rgba(0,230,255,0.6);
 animation:float 5s infinite ease-in-out;
 }
 
 @keyframes float{
-0%{transform:translateY(0px)}
+0%{transform:translateY(0)}
 50%{transform:translateY(-10px)}
-100%{transform:translateY(0px)}
+100%{transform:translateY(0)}
 }
 
-/* architecture flow */
+/* architecture */
 
 .arch{
 display:flex;
@@ -181,9 +163,9 @@ animation:flowMobile 1.5s infinite;
 }
 
 @keyframes flowMobile{
-0%{opacity:0.3; transform:translateY(-5px);}
-50%{opacity:1; transform:translateY(5px);}
-100%{opacity:0.3; transform:translateY(-5px);}
+0%{opacity:0.3; transform:translateY(-6px);}
+50%{opacity:1; transform:translateY(6px);}
+100%{opacity:0.3; transform:translateY(-6px);}
 }
 
 }
@@ -202,13 +184,15 @@ animation:flowMobile 1.5s infinite;
 
 <h1>🚀 AWS EC2 Cloud Web Server Deployment</h1>
 
-<p>Welcome to my cloud infrastructure project.</p>
+<p>This website demonstrates a complete cloud-based web hosting deployment on Amazon Web Services (AWS).</p>
 
-<p>This website demonstrates a complete cloud-based web hosting deployment on Amazon Web Services (AWS). The domain buciiii.com is hosted on an Amazon EC2 instance running the Apache HTTP Server with secure HTTPS configuration.</p>
+<p>The domain buciiii.com is hosted on an Amazon EC2 instance running the Apache HTTP Server with secure HTTPS configuration.</p>
 
 </header>
 
 <div class="container">
+
+<!-- ABOUT -->
 
 <div class="section">
 
@@ -220,46 +204,41 @@ animation:flowMobile 1.5s infinite;
 
 <p>My name is <b>Pandu Sairam</b>.</p>
 
-<p>I implemented this project to demonstrate practical experience in cloud infrastructure deployment and Linux server configuration using AWS services.</p>
-
-<p>This project demonstrates hands-on experience in deploying and managing a cloud-based web hosting environment including server configuration, domain integration and secure HTTPS communication.</p>
+<p>This project demonstrates hands-on experience in deploying and managing a cloud-based web hosting environment using AWS infrastructure and Linux server configuration.</p>
 
 </div>
+
+<!-- LEARNING JOURNEY -->
+
+<div class="section">
+
+<h2>🎯 Learning Journey</h2>
+
+<p>This project represents my hands-on learning journey in cloud computing and DevOps practices.</p>
+
+<p>Through this implementation I learned how cloud infrastructure works including server provisioning, networking configuration, DNS management, web server setup and HTTPS security.</p>
+
+</div>
+
+<!-- PROJECT OVERVIEW -->
 
 <div class="section">
 
 <h2>🚀 Project Overview</h2>
-
-<p>This project demonstrates a cloud-based web server deployment on AWS implemented using Amazon EC2 and the Apache HTTP Server.</p>
-
-<p>The objective of this project was to design and implement an end-to-end cloud hosting environment including server provisioning, networking configuration, domain mapping, SSL security and version-controlled updates.</p>
 
 <ul>
 <li>Deploying a cloud server on AWS EC2</li>
 <li>Installing and configuring the Apache web server</li>
 <li>Deploying website content on a Linux server</li>
 <li>Connecting a custom domain</li>
-<li>Configuring DNS records for domain integration</li>
-<li>Securing the website using HTTPS with SSL certificates</li>
+<li>Configuring DNS records</li>
+<li>Securing the website with HTTPS using SSL certificates</li>
 <li>Managing project updates using Git and GitHub</li>
 </ul>
 
 </div>
 
-<div class="section">
-
-<h2>📊 Project Infrastructure Summary</h2>
-
-<p><b>Cloud Platform:</b> Amazon Web Services</p>
-<p><b>Compute Service:</b> Amazon EC2</p>
-<p><b>Instance Type:</b> t3.micro</p>
-<p><b>Operating System:</b> Amazon Linux 2023</p>
-<p><b>Web Server:</b> Apache HTTP Server</p>
-<p><b>Domain Provider:</b> GoDaddy</p>
-<p><b>Security:</b> HTTPS using Certbot & Let's Encrypt</p>
-<p><b>Version Control:</b> Git & GitHub</p>
-
-</div>
+<!-- ARCHITECTURE -->
 
 <div class="section">
 
@@ -267,38 +246,116 @@ animation:flowMobile 1.5s infinite;
 
 <div class="arch">
 
-<div class="node">🌍 Browser</div>
+<div class="node">Browser</div>
 <div class="arrow">➡</div>
-<div class="node">🌐 Internet</div>
+<div class="node">Internet</div>
 <div class="arrow">➡</div>
-<div class="node">🔗 DNS</div>
+<div class="node">DNS</div>
 <div class="arrow">➡</div>
 <div class="node">Elastic IP</div>
 <div class="arrow">➡</div>
-<div class="node">☁ AWS EC2</div>
+<div class="node">AWS EC2</div>
 <div class="arrow">➡</div>
-<div class="node">🖥 Apache</div>
+<div class="node">Apache</div>
 <div class="arrow">➡</div>
-<div class="node">📄 Website</div>
+<div class="node">Website Files</div>
 
 </div>
 
 </div>
+
+<!-- IMPLEMENTATION -->
+
+<div class="section">
+
+<h2>📘 Deployment Implementation</h2>
+
+<h3>EC2 Server Deployment</h3>
+
+<p>A cloud server was created using Amazon EC2 with instance type t3.micro running Amazon Linux 2023.</p>
+
+<h3>Connecting to the Server</h3>
+
+<p>chmod 400 key.pem</p>
+<p>ssh -i key.pem ec2-user@IP_ADDRESS</p>
+
+<h3>Website Deployment</h3>
+
+<p>sudo nano /var/www/html/index.html</p>
+
+<h3>Apache Installation</h3>
+
+<p>sudo dnf install httpd</p>
+<p>sudo systemctl start httpd</p>
+<p>sudo systemctl enable httpd</p>
+
+</div>
+
+<!-- SECURITY -->
+
+<div class="section">
+
+<h2>🔐 Security & Networking</h2>
+
+<p>Security group rules were configured to allow the following ports:</p>
+
+<p>Port 22 – SSH</p>
+<p>Port 80 – HTTP</p>
+<p>Port 443 – HTTPS</p>
+
+</div>
+
+<!-- DNS -->
+
+<div class="section">
+
+<h2>🌐 Domain & DNS Configuration</h2>
+
+<p>The domain buciiii.com was purchased from GoDaddy and mapped to the EC2 Elastic IP address using DNS records.</p>
+
+<p>A record: buciiii.com → Elastic IP</p>
+
+<p>CNAME: www.buciiii.com → buciiii.com</p>
+
+</div>
+
+<!-- HTTPS -->
+
+<div class="section">
+
+<h2>🔒 HTTPS Security</h2>
+
+<p>SSL certificates were generated using Certbot.</p>
+
+<p>sudo dnf install certbot</p>
+
+<p>sudo certbot certonly -d buciiii.com -d www.buciiii.com -d test.buciiii.com</p>
+
+</div>
+
+<!-- VERSION CONTROL -->
+
+<div class="section">
+
+<h2>💻 Version Control</h2>
+
+<p>This project uses Git for version control and is hosted on GitHub.</p>
+
+<p>GitHub Repository:</p>
+
+<p>https://github.com/sairampandu001/aws-ec2-cloud-website</p>
+
+</div>
+
+<!-- FINAL RESULT -->
 
 <div class="section">
 
 <h2>🏁 Final Result</h2>
 
-<div class="badges">
-<span>AWS EC2</span>
-<span>Apache</span>
-<span>Elastic IP</span>
-<span>DNS</span>
-<span>HTTPS</span>
-<span>GitHub</span>
-</div>
+<p>The website is successfully deployed on AWS EC2 and accessible via:</p>
 
-<p>The website is now securely accessible through the domain <b>https://buciiii.com</b>.</p>
+<p>https://buciiii.com</p>
 
 </div>
 
@@ -306,7 +363,7 @@ animation:flowMobile 1.5s infinite;
 
 <footer>
 
-<p>© 2026 Pandu Sairam | AWS Cloud Deployment Project</p>
+<p>© 2026 Pandu Sairam | Cloud DevOps Project</p>
 
 </footer>
 
@@ -314,7 +371,7 @@ animation:flowMobile 1.5s infinite;
 
 <script>
 
-/* PARTICLES */
+/* PARTICLE ANIMATION */
 
 const canvas=document.getElementById("particles");
 const ctx=canvas.getContext("2d");
@@ -328,8 +385,8 @@ for(let i=0;i<80;i++){
 particles.push({
 x:Math.random()*canvas.width,
 y:Math.random()*canvas.height,
-vx:(Math.random()-0.5)*0.3,
-vy:(Math.random()-0.5)*0.3
+vx:(Math.random()-0.5)*0.25,
+vy:(Math.random()-0.5)*0.25
 });
 }
 
@@ -357,7 +414,7 @@ requestAnimationFrame(animate);
 
 animate();
 
-/* scroll glow */
+/* scroll highlight */
 
 const sections=document.querySelectorAll(".section");
 
