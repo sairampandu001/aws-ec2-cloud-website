@@ -159,14 +159,10 @@ padding:15px;
 flex-direction:column;
 }
 
-/* hide side arrow */
-
 .arrow{
 font-size:0;
 animation:flowMobile 1.5s infinite;
 }
-
-/* show down arrow */
 
 .arrow::before{
 content:"⬇";
@@ -174,8 +170,6 @@ font-size:26px;
 color:#00e6ff;
 display:block;
 }
-
-/* vertical animation */
 
 @keyframes flowMobile{
 0%{opacity:0.3; transform:translateY(-5px);}
@@ -197,11 +191,11 @@ display:block;
 
 <header>
 
-<h1>🚀 Welcome to My AWS EC2 Cloud Server</h1>
+<h1>🚀 AWS EC2 Cloud Web Server Deployment</h1>
 
-<p>Thank you for visiting my website. I truly appreciate your time exploring my Cloud & DevOps learning project.</p>
+<p>This website demonstrates a complete cloud-based web hosting project implemented on AWS.</p>
 
-<p>If you are seeing this page, it means you have successfully reached my server hosted on AWS EC2.</p>
+<p>The domain <b>buciiii.com</b> is hosted on an AWS EC2 instance using the Apache web server with secure HTTPS configuration.</p>
 
 </header>
 
@@ -216,7 +210,7 @@ display:block;
 
 <p>
 My name is <b>Pandu Sairam</b>.  
-I am currently learning <b>Cloud Computing and DevOps</b> step by step by building real hands-on projects using AWS and Linux servers.
+This project demonstrates a cloud infrastructure deployment where I implemented a complete website hosting environment using AWS, Linux, Apache, DNS configuration, and HTTPS security.
 </p>
 
 </div>
@@ -224,39 +218,37 @@ I am currently learning <b>Cloud Computing and DevOps</b> step by step by buildi
 
 <div class="section">
 
-<h2>☁️ End-to-End AWS EC2 Web Server Deployment</h2>
+<h2>☁️ Project Implementation</h2>
 
 <p>
-As part of my Cloud/DevOps learning journey, I deployed a complete web server environment on AWS.
+This project demonstrates the deployment of a cloud-hosted website using <b>AWS EC2</b>.
 </p>
 
 <p>
-I created an AWS account, launched an <b>EC2 instance in the Asia Pacific (Hyderabad) region</b>, and connected securely using <b>SSH with a .pem key</b>.
+An EC2 instance was launched in the <b>Asia Pacific (Hyderabad) region</b> using <b>Amazon Linux 2023</b>. Secure server access was configured using an SSH key pair.
 </p>
 
 <p>
-Inside the server, I practiced Linux commands such as <b>cd, ls, pwd</b> and explored important directories like:
+Inside the server environment, Linux commands such as <b>cd, ls, and pwd</b> were used to navigate directories including:
 </p>
 
 <p>
 <b>/etc</b> – system configuration  
 <b>/var</b> – system data and logs  
-<b>/var/www/html</b> – website root directory
+<b>/var/www/html</b> – Apache website root directory
 </p>
 
 <p>
-I installed and configured the <b>Apache web server (httpd)</b> and deployed a custom website by editing the <b>index.html</b> file.
+The <b>Apache HTTP Server (httpd)</b> was installed and configured to host the website by deploying the HTML page inside the document root directory.
 </p>
 
 <div class="badges">
-<span>ssh</span>
-<span>.pem key</span>
-<span>cd</span>
-<span>ls</span>
-<span>pwd</span>
-<span>httpd</span>
-<span>dnf install httpd</span>
-<span>systemctl start httpd</span>
+<span>SSH Access</span>
+<span>.pem Key</span>
+<span>Linux Commands</span>
+<span>Apache httpd</span>
+<span>DNF Package Manager</span>
+<span>systemctl</span>
 </div>
 
 </div>
@@ -264,10 +256,10 @@ I installed and configured the <b>Apache web server (httpd)</b> and deployed a c
 
 <div class="section">
 
-<h2>🔐 Security & Networking Configuration</h2>
+<h2>🔐 Security & Networking</h2>
 
 <p>
-I configured AWS <b>Security Groups</b> to allow the required ports:
+To allow secure connectivity and public access to the website, EC2 Security Group rules were configured.
 </p>
 
 <div class="badges">
@@ -277,7 +269,7 @@ I configured AWS <b>Security Groups</b> to allow the required ports:
 </div>
 
 <p>
-This allows secure remote access and web traffic to reach the server safely.
+These rules allow secure remote server access and enable web traffic to reach the Apache web server.
 </p>
 
 </div>
@@ -288,15 +280,15 @@ This allows secure remote access and web traffic to reach the server safely.
 <h2>🌐 Domain & SSL Configuration</h2>
 
 <p>
-I connected my custom domain to the EC2 server using DNS and configured secure web access.
+The domain <b>buciiii.com</b> was connected to the EC2 server using DNS configuration through GoDaddy.
 </p>
 
 <p>
-Using <b>Let’s Encrypt Certbot</b>, I generated an <b>SSL certificate</b> and configured Apache to enable <b>HTTPS encryption</b>.
+An <b>A Record</b> was configured to map the domain to the EC2 <b>Elastic IP address</b>.
 </p>
 
 <p>
-All HTTP traffic is redirected to HTTPS to ensure secure communication between users and the server.
+HTTPS security was implemented using <b>Let's Encrypt Certbot</b>, generating SSL certificates to enable encrypted communication.
 </p>
 
 <div class="badges">
@@ -327,7 +319,7 @@ All HTTP traffic is redirected to HTTPS to ensure secure communication between u
 <div class="arrow">➡</div>
 <div class="node">🖥 Apache</div>
 <div class="arrow">➡</div>
-<div class="node">📄 Website</div>
+<div class="node">📄 Website Files</div>
 
 </div>
 
@@ -336,19 +328,20 @@ All HTTP traffic is redirected to HTTPS to ensure secure communication between u
 
 <div class="section">
 
-<h2>⚙️ Additional Learning</h2>
+<h2>⚙️ Version Control</h2>
 
 <p>
-I also learned the differences between Linux package managers such as:
+To manage updates and track modifications to the website files, version control was implemented using Git.
 </p>
 
 <div class="badges">
-<span>apt (Ubuntu)</span>
-<span>dnf (Amazon Linux)</span>
+<span>Git</span>
+<span>GitHub</span>
+<span>Version Control</span>
 </div>
 
 <p>
-and practiced updating and maintaining server packages.
+All project files were committed and pushed to a GitHub repository, allowing changes to be tracked and maintained efficiently.
 </p>
 
 </div>
@@ -356,24 +349,24 @@ and practiced updating and maintaining server packages.
 
 <div class="section">
 
-<h2>🎯 My Goal</h2>
+<h2>🎯 Project Outcome</h2>
 
 <p>
-This project helped me understand the real-world fundamentals of:
+This project demonstrates the successful implementation of a cloud-hosted web server using AWS infrastructure.
 </p>
 
 <div class="badges">
-<span>Linux Server Management</span>
 <span>AWS EC2</span>
-<span>Networking</span>
-<span>Security Groups</span>
-<span>DNS</span>
+<span>Linux Server</span>
+<span>Apache Web Server</span>
+<span>Elastic IP</span>
+<span>DNS Configuration</span>
 <span>SSL / HTTPS</span>
-<span>Web Hosting</span>
+<span>Git Version Control</span>
 </div>
 
 <p>
-I am continuously improving my skills to become a <b>Cloud / DevOps Engineer</b>.
+The website is now securely accessible via HTTPS through the domain <b>buciiii.com</b>.
 </p>
 
 </div>
@@ -383,81 +376,8 @@ I am continuously improving my skills to become a <b>Cloud / DevOps Engineer</b>
 
 <footer>
 
-<p>© 2026 Pandu Sairam | AWS Cloud Learning Project ☁️</p>
+<p>© 2026 Pandu Sairam | AWS Cloud Project</p>
 
 </footer>
 
 </div>
-
-
-<script>
-
-/* BLUE PARTICLES */
-
-const canvas=document.getElementById("particles");
-const ctx=canvas.getContext("2d");
-
-canvas.width=window.innerWidth;
-canvas.height=window.innerHeight;
-
-let particles=[];
-
-for(let i=0;i<80;i++){
-particles.push({
-x:Math.random()*canvas.width,
-y:Math.random()*canvas.height,
-vx:(Math.random()-0.5)*0.25,
-vy:(Math.random()-0.5)*0.25
-});
-}
-
-function animate(){
-
-ctx.clearRect(0,0,canvas.width,canvas.height);
-
-particles.forEach(p=>{
-
-p.x+=p.vx;
-p.y+=p.vy;
-
-if(p.x<0||p.x>canvas.width)p.vx*=-1;
-if(p.y<0||p.y>canvas.height)p.vy*=-1;
-
-ctx.beginPath();
-ctx.arc(p.x,p.y,2,0,Math.PI*2);
-ctx.fillStyle="rgba(0,180,255,0.7)";
-ctx.fill();
-
-});
-
-requestAnimationFrame(animate);
-}
-
-animate();
-
-/* highlight section */
-
-const sections=document.querySelectorAll(".section");
-
-window.addEventListener("scroll",()=>{
-
-let middle=window.innerHeight/2;
-
-sections.forEach(sec=>{
-
-let rect=sec.getBoundingClientRect();
-
-if(rect.top < middle && rect.bottom > middle){
-sec.classList.add("active");
-}else{
-sec.classList.remove("active");
-}
-
-});
-
-});
-
-</script>
-
-</body>
-</html>
