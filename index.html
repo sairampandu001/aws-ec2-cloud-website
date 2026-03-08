@@ -2,8 +2,18 @@
 
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Pandu Sairam | AWS EC2 Cloud Web Server Deployment</title>
+
+<meta name="description" content="AWS EC2 Cloud Web Server Deployment project by Pandu Sairam demonstrating cloud infrastructure, Apache configuration, DNS setup and HTTPS security.">
+
+<meta property="og:title" content="AWS EC2 Cloud Web Server Deployment">
+<meta property="og:description" content="Cloud deployment project by Pandu Sairam using AWS EC2, Apache, DNS and HTTPS.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://buciiii.com">
+<meta property="og:image" content="https://buciiii.com/profile.png">
 
 <style>
 
@@ -15,7 +25,7 @@ color:white;
 overflow-x:hidden;
 }
 
-/* particle canvas */
+/* particles */
 
 canvas{
 position:fixed;
@@ -134,6 +144,45 @@ animation:flow 1.5s infinite;
 100%{opacity:0.3; transform:translateX(-6px);}
 }
 
+/* buttons */
+
+.btn{
+display:inline-block;
+background:#00e6ff;
+color:black;
+padding:12px 18px;
+border-radius:8px;
+font-weight:bold;
+text-decoration:none;
+margin-top:10px;
+margin-right:10px;
+}
+
+.btn:hover{
+background:#00bcd4;
+}
+
+/* code blocks */
+
+code{
+background:#111;
+color:#00e6ff;
+padding:5px 10px;
+border-radius:6px;
+font-family:monospace;
+}
+
+pre{
+color:#00e6ff;
+font-family:monospace;
+font-size:15px;
+line-height:1.6;
+background:none;
+border:none;
+padding:0;
+margin-top:10px;
+}
+
 /* footer */
 
 footer{
@@ -197,13 +246,6 @@ content:"⬇";
 font-size:24px;
 color:#00e6ff;
 display:block;
-animation:flowMobile 1.5s infinite;
-}
-
-@keyframes flowMobile{
-0%{opacity:0.3; transform:translateY(-5px);}
-50%{opacity:1; transform:translateY(5px);}
-100%{opacity:0.3; transform:translateY(-5px);}
 }
 
 }
@@ -222,102 +264,104 @@ animation:flowMobile 1.5s infinite;
 
 <h1>🚀 AWS EC2 Cloud Web Server Deployment</h1>
 
-<p>This project demonstrates the deployment of a cloud-hosted website using Amazon Web Services infrastructure.</p>
+<p>This website demonstrates a complete cloud-based web hosting deployment using Amazon Web Services infrastructure.</p>
 
 </header>
 
 <div class="container">
 
-<!-- 2 ABOUT ME -->
-
 <div class="section">
-
 <h2>🧑‍💻 About Me</h2>
 
 <div class="profile">
 <img src="profile.png">
 </div>
 
-<p>My name is <b>Pandu Sairam</b>. This project demonstrates my hands-on experience deploying and managing a cloud-hosted website using AWS and Linux servers.</p>
+<p>
+Hello! My name is <b>Pandu Sairam</b>, an aspiring <b>Cloud and DevOps Engineer</b> based in Hyderabad, India.
+I have around <b>1.5 years of professional experience</b> working as a Customer Support Engineer at
+<b>Skypro Technologies Pvt. Ltd.</b>
+</p>
+
+<p>
+I am currently focused on building strong practical skills in <b>cloud computing</b>,
+<b>Linux system administration</b>, and <b>DevOps technologies</b>.
+</p>
+
+<p>
+This website is a hands-on project where I deployed a real cloud web server using
+<b>AWS EC2</b>, configured an <b>Apache web server</b>, connected a custom domain,
+and secured the website with <b>HTTPS using Let's Encrypt SSL certificates</b>.
+</p>
+
+<p>
+Through this project, I gained practical experience with
+<b>AWS cloud infrastructure</b>, <b>Linux server management</b>,
+<b>DNS configuration</b>, <b>web server deployment</b>,
+and <b>version control using Git and GitHub</b>.
+</p>
+
+<p>
+My goal is to become a professional <b>Cloud / DevOps Engineer</b>
+by continuously building real-world projects and improving my skills in
+<b>AWS, Linux, automation, CI/CD pipelines, and infrastructure management</b>.
+</p>
 
 </div>
 
-<!-- 3 LEARNING JOURNEY -->
-
 <div class="section">
-
 <h2>🎯 Learning Journey</h2>
-
-<p>This project represents my hands-on learning journey in cloud computing and DevOps practices.</p>
-
-<p>Through building this project I learned how cloud infrastructure works including server provisioning, networking configuration, DNS setup, web server configuration and HTTPS security.</p>
-
+<p>This project represents my hands-on learning journey in cloud computing and DevOps.</p>
 </div>
 
-<!-- 4 PROJECT OVERVIEW -->
-
 <div class="section">
+<h2>📂 Projects</h2>
 
-<h2>🚀 Project Overview</h2>
+<h3>AWS EC2 Cloud Web Server Deployment</h3>
+
+<p>
+This project demonstrates the end-to-end deployment of a cloud-hosted website using AWS cloud services.
+</p>
+
+<p>
+The website is hosted on an <b>AWS EC2 instance</b> running <b>Amazon Linux 2023</b>
+with an <b>Apache web server</b>. A custom domain was configured using
+<b>GoDaddy DNS</b> and secured with <b>HTTPS using a Let's Encrypt SSL certificate</b>.
+</p>
+
+<h3>Key Implementation Steps</h3>
 
 <ul>
-<li>Deploying a cloud server on AWS EC2</li>
-<li>Installing and configuring Apache web server</li>
-<li>Deploying website files on a Linux server</li>
-<li>Connecting a custom domain</li>
-<li>Configuring DNS records</li>
-<li>Securing the website with HTTPS</li>
-<li>Managing code using Git and GitHub</li>
+<li>Launched an EC2 instance in the AWS cloud</li>
+<li>Configured SSH access for secure server login</li>
+<li>Installed and configured the Apache web server</li>
+<li>Deployed website files to <b>/var/www/html</b></li>
+<li>Connected the custom domain <b>buciiii.com</b></li>
+<li>Configured DNS using GoDaddy (A Record and CNAME)</li>
+<li>Enabled HTTPS security using Certbot and Let's Encrypt</li>
+<li>Managed project code using Git and GitHub</li>
 </ul>
 
 </div>
 
-<!-- 5 INFRASTRUCTURE SUMMARY -->
-
 <div class="section">
-
-<h2>📊 Infrastructure Summary</h2>
-
-<p>Cloud Platform: Amazon Web Services (AWS)</p>
-<p>Compute Service: EC2 t3.micro</p>
-<p>Operating System: Amazon Linux 2023</p>
-<p>Web Server: Apache HTTP Server</p>
-<p>DNS Provider: GoDaddy</p>
-<p>Security: HTTPS enabled with Certbot</p>
-
-</div>
-
-<!-- 6 DEVOPS SKILLS -->
-
-<div class="section">
-
 <h2>⚙ DevOps Skills</h2>
-
 <ul>
-<li>Linux server administration</li>
-<li>AWS cloud infrastructure deployment</li>
-<li>Apache web server configuration</li>
-<li>DNS configuration</li>
-<li>HTTPS security setup</li>
-<li>Git version control</li>
+<li>Linux Administration</li>
+<li>AWS Infrastructure</li>
+<li>Web Server Configuration</li>
+<li>DNS Configuration</li>
+<li>HTTPS Security</li>
+<li>Git Version Control</li>
 </ul>
-
 </div>
 
-<!-- 7 TECHNOLOGY STACK -->
-
 <div class="section">
-
 <h2>🛠 Technology Stack</h2>
-
 <p>AWS EC2 | Linux | Apache | DNS | Certbot | Git | GitHub</p>
-
 </div>
 
-<!-- 8 ARCHITECTURE FLOW -->
-
 <div class="section">
-
 <h2>☁ AWS Architecture Flow</h2>
 
 <div class="arch">
@@ -334,149 +378,111 @@ animation:flowMobile 1.5s infinite;
 <div class="node">Elastic IP</div>
 <div class="arrow">➡</div>
 
-<div class="node">AWS EC2</div>
+<div class="node">EC2</div>
 <div class="arrow">➡</div>
 
 <div class="node">Apache</div>
 <div class="arrow">➡</div>
 
-<div class="node">Website Files</div>
+<div class="node">Website</div>
 
 </div>
 
 </div>
-
-<!-- 9 ARCHITECTURE EXPLANATION -->
 
 <div class="section">
-
 <h2>📘 Architecture Explanation</h2>
-
-<p>When a user accesses the domain buciiii.com, the DNS records resolve the domain to the EC2 Elastic IP address. The request reaches the EC2 server where the Apache web server processes the request and serves the website files located in /var/www/html.</p>
-
+<p>When a user accesses buciiii.com the DNS resolves to the Elastic IP of the EC2 instance and Apache serves the website files from /var/www/html.</p>
 </div>
 
-<!-- 10 IMPLEMENTATION TIMELINE -->
-
 <div class="section">
-
 <h2>🗂 Project Implementation Timeline</h2>
+<p>Launch EC2 → Install Apache → Deploy HTML → Configure DNS → Enable HTTPS → Git Version Control</p>
+</div>
 
-<p>1. Launch EC2 instance</p>
-<p>2. Configure SSH access</p>
-<p>3. Install Apache web server</p>
-<p>4. Deploy website files</p>
-<p>5. Configure DNS records</p>
-<p>6. Enable HTTPS security</p>
-<p>7. Manage project with Git</p>
+<div class="section">
+<h2>📦 Deployment Implementation Commands</h2>
+
+<pre>
+sudo dnf install httpd
+sudo systemctl start httpd
+sudo systemctl enable httpd
+</pre>
 
 </div>
 
-<!-- 11 DEPLOYMENT IMPLEMENTATION -->
-
 <div class="section">
-
-<h2>📦 Deployment Implementation</h2>
-
-<p>sudo dnf install httpd</p>
-<p>sudo systemctl start httpd</p>
-<p>sudo systemctl enable httpd</p>
-
-</div>
-
-<!-- 12 TROUBLESHOOTING -->
-
-<div class="section">
-
 <h2>🛠 Problems Faced & Troubleshooting</h2>
-
-<p>During deployment the website was initially not accessible through the browser. Troubleshooting included checking EC2 instance status, verifying Apache service status, reviewing security group rules and checking DNS configuration.</p>
-
-<p>Network diagnostics using ping and tracert helped identify a routing issue which was later resolved.</p>
-
+<p>Troubleshooting included verifying EC2 status, Apache service, security groups and DNS configuration.</p>
 </div>
 
-<!-- 13 SECURITY -->
-
 <div class="section">
-
 <h2>🔐 Security & Networking</h2>
-
 <p>Port 22 – SSH</p>
 <p>Port 80 – HTTP</p>
 <p>Port 443 – HTTPS</p>
-
 </div>
 
-<!-- 14 DNS -->
-
 <div class="section">
-
 <h2>🌐 Domain & DNS Configuration</h2>
-
 <p>buciiii.com → Elastic IP</p>
-
 <p>www.buciiii.com → buciiii.com</p>
-
 </div>
 
-<!-- 15 VERSION CONTROL -->
-
 <div class="section">
-
 <h2>💻 Version Control</h2>
 
-<p>Repository: https://github.com/sairampandu001/aws-ec2-cloud-website</p>
+<a class="btn" href="https://github.com/sairampandu001/aws-ec2-cloud-website" target="_blank">
+View Project on GitHub
+</a>
 
 </div>
 
-<!-- 16 LIVE -->
-
 <div class="section">
-
 <h2>🌍 Live Deployment</h2>
-
 <p>https://buciiii.com</p>
-
 </div>
 
-<!-- 17 PRODUCTION -->
-
 <div class="section">
-
 <h2>🌐 Production Environment</h2>
-
-<p>The website is hosted on an EC2 instance running Amazon Linux with Apache web server and secured using HTTPS certificates.</p>
-
+<p>The website runs on AWS EC2 with Apache and HTTPS enabled.</p>
 </div>
 
-<!-- 18 FUTURE -->
-
 <div class="section">
-
 <h2>🚀 Future Improvements</h2>
-
-<p>In the future I plan to continue learning technologies such as containerization, CI/CD automation and monitoring tools to improve this project further.</p>
-
+<p>Plan to learn Docker, CI/CD pipelines and monitoring tools.</p>
 </div>
 
-<!-- 19 OUTCOME -->
-
 <div class="section">
-
 <h2>📈 Project Outcome</h2>
-
-<p>This project demonstrates practical understanding of deploying a cloud-hosted website including server provisioning, networking configuration, DNS setup and HTTPS security.</p>
-
+<p>This project demonstrates cloud deployment, server management, DNS configuration and HTTPS security.</p>
 </div>
 
-<!-- 20 FINAL RESULT -->
+<div class="section">
+<h2>📚 What I Learned</h2>
+<ul>
+<li>EC2 deployment</li>
+<li>Apache configuration</li>
+<li>DNS domain mapping</li>
+<li>HTTPS implementation</li>
+<li>Git workflow</li>
+</ul>
+</div>
 
 <div class="section">
+<h2>📞 Contact Details</h2>
 
-<h2>🏁 Final Result</h2>
+<a class="btn" href="mailto:sairampandu001@gmail.com">
+Email Me
+</a>
 
-<p>The website is successfully deployed and accessible through the domain https://buciiii.com using AWS cloud infrastructure.</p>
+<a class="btn" href="https://github.com/sairampandu001" target="_blank">
+GitHub Profile
+</a>
+
+<a class="btn" href="https://buciiii.com" target="_blank">
+Visit Website
+</a>
 
 </div>
 
